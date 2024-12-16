@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.welcome {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(122.19deg, #FF5F6D 1.89%, #FFC371 113.56%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome > h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 130px;
+  left: 5%;
+  top: 15%;
+  position: absolute;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-register-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px 60px;
+  left: 50px;
+  top: 65%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-register-container:hover {
+  transform: translateY(-55%);
+}
+
+.login-register-container > input {
+  height: 45px;
+  width: 100%;
+  border: 1px solid #ddd;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.login-register-container > input:focus {
+  border-color: #FF5F6D;
+}
+
+.login-register-container > button {
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sign-in-register-button {
+  background: linear-gradient(122.19deg, #FF5F6D 1.89%, #FFC371 113.56%);
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.sign-in-register-button:hover {
+  transform: scale(1.05);
+}
+
+.create-account-button {
+  background: none;
+  font-size: 16px;
+  color: #FF5F6D;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.create-account-button:hover {
+  color: #FFC371;
+}
+
+.todo-svg {
+  position: absolute;
+  bottom: 50px;
+  right: 5%;
+  transform: scale(1.2);
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.todo-svg:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}
